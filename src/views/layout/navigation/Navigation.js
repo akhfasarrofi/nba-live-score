@@ -1,6 +1,5 @@
 import React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import GamesScreen from '../../games/GamesScreen';
 import TeamsScreen from '../../teams/TeamsScreen';
 import NewsScreen from '../../news/NewsScreen';
@@ -18,8 +17,12 @@ const Navigation = () => (
     initialRouteName="Games"
     // @ts-ignore
     inactiveColor="#676767"
-    labelStyle={{ fontSize: 12 }}
-    style={{ backgroundColor: 'red' }}
+    labelStyle={{
+      fontSize: 12,
+    }}
+    style={{
+      backgroundColor: 'red',
+    }}
     // screenOptions={{
     //   tabBarActiveTintColor: '#000000',
     // }}

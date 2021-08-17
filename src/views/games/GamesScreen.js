@@ -1,20 +1,16 @@
 import React from 'react';
-import {
-  ScrollView,
+import { ScrollView,
   StyleSheet,
   Text,
   View,
   Image,
-  TouchableHighlight,
-  SafeAreaView,
-} from 'react-native';
+  TouchableHighlight } from 'react-native';
 import { Video } from 'expo-av';
 import { Card } from 'react-native-elements/dist/card/Card';
 import { match, matchVideo } from '../../data';
 
 const GamesScreen = () => (
   <View style={styles.container}>
-    {/* <SafeAreaView> */}
     <ScrollView showsVerticalScrollIndicator={false}>
       <Text style={styles.title}>Match</Text>
       <Video
@@ -41,8 +37,8 @@ const GamesScreen = () => (
         {matchVideo.title}
       </Text>
       <Text style={styles.time}>{matchVideo.time}</Text>
-      {match.map((item, key) => (
-        <Card containerStyle={styles.card} key={key}>
+      {match.map((item) => (
+        <Card containerStyle={styles.card} key={item.id}>
           <Text
             style={
               item.finish === false
@@ -101,7 +97,6 @@ const GamesScreen = () => (
         </Card>
       ))}
     </ScrollView>
-    {/* </SafeAreaView> */}
   </View>
 );
 
@@ -116,7 +111,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '700',
     color: 'white',
-    marginTop: 50,
+    marginTop: 40,
     marginLeft: 20,
   },
   video: {
@@ -136,7 +131,9 @@ const styles = StyleSheet.create({
     padding: 5,
     width: '25%',
   },
-  time: { color: 'white', marginLeft: 20, fontWeight: '500' },
+  time: {
+    color: 'white', marginLeft: 20, fontWeight: '500',
+  },
   card: {
     elevation: 0,
     backgroundColor: 'white',
@@ -157,8 +154,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     marginTop: 10,
   },
-  teamName: { marginTop: 15, fontWeight: '600' },
-  boxScores: { justifyContent: 'center' },
+  teamName: {
+    marginTop: 15, fontWeight: '600',
+  },
+  boxScores: {
+    justifyContent: 'center',
+  },
   score: {
     fontWeight: '600',
     fontSize: 30,
@@ -182,5 +183,7 @@ const styles = StyleSheet.create({
     width: '50%',
     alignSelf: 'center',
   },
-  labelBtn: { color: 'white', textAlign: 'center' },
+  labelBtn: {
+    color: 'white', textAlign: 'center',
+  },
 });
