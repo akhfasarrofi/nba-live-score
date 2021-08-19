@@ -1,5 +1,5 @@
 module.exports = {
-  tabWidth: 2,
+  tabWidth: 4,
   printWidth: 80,
   endOfLine: 'auto',
   arrowParens: 'avoid',

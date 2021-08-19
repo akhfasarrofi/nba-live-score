@@ -1,15 +1,15 @@
 import React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import GamesScreen from '../../games/GamesScreen';
-import TeamsScreen from '../../teams/TeamsScreen';
-import NewsScreen from '../../news/NewsScreen';
-import StatsScreen from '../../stats/StatsScreen';
-import ScheduleScreen from '../../schedule/ScheduleScreen';
-import GamesIcon from '../../games/GamesIcon';
-import TeamsIcon from '../../teams/TeamsIcon';
-import NewsIcon from '../../news/NewsIcon';
-import StatsIcon from '../../stats/StatsIcon';
-import ScheduleIcon from '../../schedule/ScheduleIcon';
+import GamesScreen from '../views/games/GamesScreen';
+import TeamsScreen from '../views/teams/TeamsScreen';
+import NewsScreen from '../views/news/NewsScreen';
+import StatsScreen from '../views/stats/StatsScreen';
+import ScheduleScreen from '../views/schedule/ScheduleScreen';
+import GamesIcon from '../views/games/GamesIcon';
+import TeamsIcon from '../views/teams/TeamsIcon';
+import NewsIcon from '../views/news/NewsIcon';
+import StatsIcon from '../views/stats/StatsIcon';
+import ScheduleIcon from '../views/schedule/ScheduleIcon';
 
 const Tab = createMaterialBottomTabNavigator();
 const Navigation = () => (

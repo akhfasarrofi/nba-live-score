@@ -1,34 +1,34 @@
-import bucks from './icon/bucks.png';
-import suns from './icon/suns.png';
-import hawks from './icon/hawks.png';
-import clippers from './icon/clippers.png';
-import ers from './icon/76ers.png';
-import boston from './icon/boston.png';
-import brooklyn from './icon/brooklyn.png';
-import knicks from './icon/knicks.png';
-import toronto from './icon/toronto.png';
-import cavaliers from './icon/cavaliers.png';
-import chicago from './icon/chicago.png';
-import detroit from './icon/detroit.png';
-import indiana from './icon/indiana.png';
-import denver from './icon/denver.png';
-import minnesota from './icon/minnesota.png';
-import portland from './icon/portland.png';
-import thunder from './icon/thunder.png';
-import utah from './icon/utah.png';
-import lakers from './icon/lakers.png';
-import kings from './icon/kings.png';
-import warriors from './icon/warriors.png';
-import hornest from './icon/hornest.png';
-import miami from './icon/miami.png';
-import washington from './icon/washington.png';
-import magic from './icon/magic.png';
-import maueriks from './icon/maueriks.png';
-import memphis from './icon/memphis.png';
-import spurs from './icon/spurs.png';
-import houston from './icon/houston.png';
-import neworleans from './icon/neworleans.png';
-import thumnailnews from './icon/newsthumnail.png';
+import { bucks,
+  suns,
+  hawks,
+  clippers,
+  ers,
+  boston,
+  brooklyn,
+  knicks,
+  toronto,
+  cavaliers,
+  chicago,
+  detroit,
+  indiana,
+  denver,
+  minnesota,
+  portland,
+  thunder,
+  utah,
+  lakers,
+  kings,
+  warriors,
+  hornest,
+  miami,
+  washington,
+  magic,
+  maueriks,
+  memphis,
+  spurs,
+  houston,
+  neworleans,
+  thumnailnews } from './assets/images';
 
 const matchVideo = {
   title: 'NBA Finals 2021 Live Streaming: Phoenix Suns vs Milwaukee Bucks',

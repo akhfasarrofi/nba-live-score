@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements/dist/card/Card';
-import { allteams } from '../../data';
+import { allteams } from '../../../data';
 
 const TeamsScreen = () => (
   <View style={styles.container}>
@@ -29,7 +29,8 @@ export default TeamsScreen;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, backgroundColor: '#13172C',
+    flex: 1,
+    backgroundColor: '#13172C',
   },
   title: {
     fontSize: 20,
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   item: {
-    flexDirection: 'row', justifyContent: 'space-around',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
 });

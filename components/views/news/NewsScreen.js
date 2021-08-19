@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Card, Paragraph, Title } from 'react-native-paper';
-import { newsthumnail } from '../../data';
+import { newsthumnail } from '../../../data';
 
 const GamesScreen = () => (
   <View style={styles.container}>

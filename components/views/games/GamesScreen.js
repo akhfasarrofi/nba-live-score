@@ -7,7 +7,7 @@ import { ScrollView,
   TouchableHighlight } from 'react-native';
 import { Video } from 'expo-av';
 import { Card } from 'react-native-elements/dist/card/Card';
-import { match, matchVideo } from '../../data';
+import { match, matchVideo } from '../../../data';
 
 const GamesScreen = () => (
   <View style={styles.container}>
@@ -132,7 +132,9 @@ const styles = StyleSheet.create({
     width: '25%',
   },
   time: {
-    color: 'white', marginLeft: 20, fontWeight: '500',
+    color: 'white',
+    marginLeft: 20,
+    fontWeight: '500',
   },
   card: {
     elevation: 0,
@@ -155,7 +157,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   teamName: {
-    marginTop: 15, fontWeight: '600',
+    marginTop: 15,
+    fontWeight: '600',
   },
   boxScores: {
     justifyContent: 'center',
@@ -184,6 +187,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   labelBtn: {
-    color: 'white', textAlign: 'center',
+    color: 'white',
+    textAlign: 'center',
   },
 });
