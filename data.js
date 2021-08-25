@@ -124,9 +124,105 @@ const newsthumnail = {
   image: thumnailnews,
   title: 'USA upset by France in Olympics opener',
   content:
-    'Led by 28 points from Evan Fournier, France finishes on a 16-2 run as Team USA suffers its first Olympic loss in nearly 20 years.',
+        'Led by 28 points from Evan Fournier, France finishes on a 16-2 run as Team USA suffers its first Olympic loss in nearly 20 years.',
 };
 
+const stats = [
+  {
+    id: 1,
+    region: 'Atlantic Division',
+    team: [
+      {
+        idTeam: 1,
+        logo: bucks,
+        wins: 0.681,
+        home: ' 29 - 7',
+        road: '20 - 16',
+        streak: 'W 2',
+      },
+      {
+        idTeam: 2,
+        logo: suns,
+        wins: 0.667,
+        home: '28 - 8',
+        road: '20 - 16',
+        streak: 'W 5',
+      },
+      {
+        idTeam: 3,
+        logo: hawks,
+        wins: 0.569,
+        home: '25 - 1',
+        road: '16 - 20',
+        streak: 'W 3',
+      },
+      {
+        idTeam: 4,
+        logo: clippers,
+        wins: 0.5,
+        home: '21 - 15',
+        road: '15 - 21',
+        streak: 'L 1',
+      },
+      {
+        idTeam: 5,
+        logo: ers,
+        wins: 0.375,
+        home: '16 - 20',
+        road: '11 - 25',
+        streak: 'L 7',
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    region: 'Central Division',
+    team: [
+      {
+        idTeam: 1,
+        logo: boston,
+        wins: 0.639,
+        home: ' 26 - 10',
+        road: '20 - 16',
+        streak: 'L 1',
+      },
+      {
+        idTeam: 2,
+        logo: brooklyn,
+        wins: 0.667,
+        home: '35 - 8',
+        road: '20 - 16',
+        streak: 'L 5',
+      },
+      {
+        idTeam: 3,
+        logo: knicks,
+        wins: 0.569,
+        home: '82 - 76',
+        road: '24 - 20',
+        streak: 'W 3',
+      },
+      {
+        idTeam: 4,
+        logo: toronto,
+        wins: 0.525,
+        home: '24 - 64',
+        road: '32 - 78',
+        streak: 'L 12',
+      },
+      {
+        idTeam: 5,
+        logo: cavaliers,
+        wins: 0.124,
+        home: '16 - 20',
+        road: '11 - 25',
+        streak: 'L 7',
+      },
+    ],
+  },
+];
+
 export {
-  matchVideo, match, allteams, newsthumnail,
+  matchVideo, match, allteams, newsthumnail, stats,
 };
