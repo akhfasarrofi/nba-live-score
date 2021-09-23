@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { ApolloProvider } from '@apollo/client';
+import client from './config/graphql';
 import Navigation from './components/navigation/Navigation';
 
 const theme = {
@@ -12,8 +14,10 @@ const theme = {
 
 export default function App() {
   return (
-    <NavigationContainer theme={theme}>
-      <Navigation />
-    </NavigationContainer>
+    <ApolloProvider client={client}>
+      <NavigationContainer theme={theme}>
+        <Navigation />
+      </NavigationContainer>
+    </ApolloProvider>
   );
 }
