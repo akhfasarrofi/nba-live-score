@@ -26,7 +26,7 @@ const StatsScreen = () => {
       <ScrollView>
         <Text style={styles.title}>NBA 2020-21 Regular Season Standings</Text>
         <Card style={styles.card}>
-          {data?.region?.map((item) => (
+          {data?.region?.map(item => (
             <View key={item.id}>
               <Card.Content>
                 <Title style={styles.titleCard}>{item.name}</Title>
@@ -35,11 +35,11 @@ const StatsScreen = () => {
                 <DataTable.Title>Team</DataTable.Title>
                 <DataTable.Title numeric>Wins</DataTable.Title>
                 <DataTable.Title numeric>Lose</DataTable.Title>
-                <DataTable.Title numeric>Point</DataTable.Title>
                 <DataTable.Title numeric>Score</DataTable.Title>
+                <DataTable.Title numeric>Point</DataTable.Title>
                 <DataTable.Title numeric>Streak</DataTable.Title>
               </DataTable.Header>
-              {item?.teams?.map((e) => (
+              {item?.teams?.map(e => (
                 <DataTable.Row style={styles.rowDataTable}>
                   <DataTable.Cell>
                     <Image
@@ -49,11 +49,11 @@ const StatsScreen = () => {
                       style={styles.image}
                     />
                   </DataTable.Cell>
-                  <DataTable.Cell numeric>{data.win}</DataTable.Cell>
-                  <DataTable.Cell numeric>{data.lose}</DataTable.Cell>
-                  <DataTable.Cell numeric>{data.point}</DataTable.Cell>
-                  <DataTable.Cell numeric>{data.score}</DataTable.Cell>
-                  <DataTable.Cell numeric>{data.streak}</DataTable.Cell>
+                  <DataTable.Cell numeric>{e.win}</DataTable.Cell>
+                  <DataTable.Cell numeric>{e.lose}</DataTable.Cell>
+                  <DataTable.Cell numeric>{e.point}</DataTable.Cell>
+                  <DataTable.Cell numeric>{e.score}</DataTable.Cell>
+                  <DataTable.Cell numeric>{e.streak}</DataTable.Cell>
                 </DataTable.Row>
               ))}
             </View>
