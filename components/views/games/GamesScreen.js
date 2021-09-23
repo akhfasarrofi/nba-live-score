@@ -22,20 +22,6 @@ const GamesScreen = () => (
         resizeMode="contain"
         isLooping
       />
-      <TouchableHighlight style={styles.streaming}>
-        <Text style={styles.labelBtn}>Streaming</Text>
-      </TouchableHighlight>
-      <Text
-        style={{
-          color: 'white',
-          position: 'absolute',
-          marginTop: 245,
-          marginLeft: 130,
-          textAlign: 'right',
-        }}
-      >
-        {matchVideo.title}
-      </Text>
       <Text style={styles.time}>{matchVideo.time}</Text>
       {match.map((item) => (
         <Card containerStyle={styles.card} key={item.id}>
@@ -111,29 +97,20 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '700',
     color: 'white',
-    marginTop: 40,
-    marginLeft: 20,
+    marginTop: '15%',
+    marginLeft: '5%',
   },
   video: {
-    width: 355,
-    height: 200,
+    width: '92%',
+    height: '25%',
     borderRadius: 10,
-    margin: 15,
+    margin: '4%',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  streaming: {
-    position: 'absolute',
-    marginTop: 250,
-    marginLeft: 20,
-    backgroundColor: '#6C54FF',
-    borderRadius: 50,
-    padding: 5,
-    width: '25%',
-  },
   time: {
     color: 'white',
-    marginLeft: 20,
+    marginLeft: '5%',
     fontWeight: '500',
   },
   card: {
@@ -157,7 +134,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   teamName: {
-    marginTop: 15,
+    marginTop: '15%',
     fontWeight: '600',
   },
   boxScores: {
@@ -169,8 +146,7 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
   },
   broadcastFinish: {
-    marginRight: 40,
-    marginLeft: 40,
+    justifyContent: 'center',
     backgroundColor: '#CECECE',
     borderRadius: 50,
     padding: 2,
@@ -178,8 +154,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   broadcastNoFinish: {
-    marginRight: 40,
-    marginLeft: 40,
+    justifyContent: 'center',
     backgroundColor: '#FF54F8',
     borderRadius: 50,
     padding: 2,
