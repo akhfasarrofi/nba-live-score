@@ -26,7 +26,7 @@ const StatsScreen = () => {
       <ScrollView>
         <Text style={styles.title}>NBA 2020-21 Regular Season Standings</Text>
         <Card style={styles.card}>
-          {data?.region?.map(item => (
+          {data?.region?.map((item) => (
             <View key={item.id}>
               <Card.Content>
                 <Title style={styles.titleCard}>{item.name}</Title>
@@ -39,7 +39,7 @@ const StatsScreen = () => {
                 <DataTable.Title numeric>Point</DataTable.Title>
                 <DataTable.Title numeric>Streak</DataTable.Title>
               </DataTable.Header>
-              {item?.teams?.map(e => (
+              {item?.teams?.map((e) => (
                 <DataTable.Row style={styles.rowDataTable}>
                   <DataTable.Cell>
                     <Image
