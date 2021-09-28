@@ -1,12 +1,15 @@
 import React from 'react';
-import { ScrollView,
+import {
+  ScrollView,
   StyleSheet,
   Text,
   View,
   Image,
-  TouchableHighlight } from 'react-native';
+  TouchableHighlight,
+} from 'react-native';
 import { Video } from 'expo-av';
 import { Card } from 'react-native-elements/dist/card/Card';
+import dayjs from 'dayjs';
 import { match, matchVideo } from '../../../data';
 
 const GamesScreen = () => (
@@ -22,7 +25,7 @@ const GamesScreen = () => (
         resizeMode="contain"
         isLooping
       />
-      <Text style={styles.time}>{matchVideo.time}</Text>
+      <Text style={styles.time}>{dayjs().format('dddd, MMMM D HH:mm A')}</Text>
       {match.map((item) => (
         <Card containerStyle={styles.card} key={item.id}>
           <Text
