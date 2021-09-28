@@ -29,7 +29,7 @@ const TeamsScreen = () => {
             <Card containerStyle={styles.card}>
               <View style={styles.item}>
                 {item?.teams?.map((e) => (
-                  <View>
+                  <View key={e.id}>
                     <Image
                       source={{
                         uri: e.image_url,
